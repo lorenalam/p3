@@ -1,0 +1,329 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/fondo.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    cursor: url('images/cursor.png'), auto; /* Cambia el cursor a una mano (útil para botones y enlaces) */   
+}
+
+a {
+    cursor: url('images/cursor.png'), auto; /* Mantiene el cursor predeterminado en los enlaces */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header-container {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si el header tiene altura */
+    height: 225px; /* Ajusta según necesidad */
+    
+}
+
+.header-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+}
+
+.titulo {
+    font-family: 'Grandstander', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 20px;
+    color: #941212;
+}
+
+
+
+.barra-horizontal {
+    font-family: 'Grandstander', sans-serif;
+    background-color: #1f1f35;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.barra-horizontal .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.barra-horizontal .menu li {
+    margin: 0 20px;
+}
+
+.barra-horizontal .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.barra-horizontal .menu li a:hover {
+    text-decoration:  ghostwhite;
+    background-color:#50506d ;
+    color: #d86c6c;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    display: none;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Cuando el enlace de anclaje coincida con el ID de la sección, esa sección será visible */
+section:target {
+    display: block;
+}
+
+h2 {
+    font-family: 'Grandstander', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #941212;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+/* Sección Itinerario */
+
+.image-container {
+    display: flex; /* Poner las imágenes en fila */
+    justify-content: center; /* Centrarlas horizontalmente */
+    gap: 20px; /* Espacio entre imágenes */
+    margin-bottom: 40px; /* Espacio debajo para separarlo del siguiente bloque */
+}
+
+.museum-image {
+    width: 100%; /* Que sea responsive */
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantener proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de animación */
+}
+
+.museum-image:hover {
+    transform: scale(1.1); /* Hace la imagen un poco más grande al pasar el mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
+}
+Estilo para el video */
+
+.video-container {
+    display: flex; /* Usamos flexbox para alinearlas en fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin: 20px auto; /* Centramos el contenedor en la página */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    padding-bottom: 0px
+}
+
+video {
+    margin: 20px auto;/* Centra el video */
+    border: 5px solid #9b193e;
+    width: 50%; /* Ajusta el video al 80% del ancho de la ventana */
+    max-width: 600px; /* Tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px;
+}
+  
+
+/* Estilos para la tabla de compras */
+table {
+    width: 100%;
+    max-width: 500px; /* Ajusta el tamaño máximo */
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Asegurar bordes redondeados en la tabla */
+}
+
+/* Encabezados de la tabla */
+table thead {
+    background-color: #9b193e; /* Rojo oscuro */
+    color: white; /* Texto blanco */
+    font-size: 18px;
+}
+
+table th, table td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+}
+
+/* Filas impares con fondo distinto */
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo al pasar el mouse */
+table tbody tr:hover {
+    background-color: #f1e1e1; /* Cambio de color al pasar el mouse */
+}
+
+/* Ajuste de la última fila para quitar borde */
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* Sección diario */
+form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sección Lista */
+.checklist {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Efecto de tachado al marcar */
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through ;
+    color: rgb(160, 44, 44);
+}
+
+/* Sección Mapa */
+.iframe-container {
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: auto; /* Centra el iframe */
+}
+
+iframe {
+    width: 100%;
+    height: 500px; /* Ajusta según necesidad */
+    border: none;
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+textarea, input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #9b193e;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+ /* Estilo para los comentarios */
+#comentarios {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comentario {
+    margin-bottom: 20px;
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Reducir el espaciado vertical */
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Asegura que los enlaces también sean más pequeños */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}

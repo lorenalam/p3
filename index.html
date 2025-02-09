@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía 4 Días New York</title>
+    <link rel="icon" href="images/cursor.png" type="images/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/taxi.png" alt="Imagen de título" class="header-image">
+            <h1 class="titulo">4 DÍAS EN NEW YORK</h1>
+        </div>
+        <!-- Barra de navegación horizontal -->
+        <nav class="barra-horizontal">
+            <ul class="menu">
+                <li><a href="#itinerario">Itinerario</a></li>
+                <li><a href="#diario">Diario de Viaje</a></li>
+                <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#mapa">CityMap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Itinerario -->
+        <section id="itinerario">
+            <h2>ITINERARIO</h2>
+            <div id="dia1">
+                <h3>DÍA 1: Explorando Manhattan</h3>
+                <p>Comienza el viaje visitando los principales puntos de <a href="https://es.wikipedia.org/wiki/Manhattan" target="_blank">Manhattan</a>, como <a href="https://www.google.com/maps/place/Times+Square/@40.7579747,-73.9881175,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25855c6480299:0x55194ec5a1ae072e!8m2!3d40.7579747!4d-73.9855426!16zL20vMDdxZHI?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D" target="_blank">Times Square</a>, <a href="https://www.centralparknyc.org" target="_blank">Central Park</a> y el <a href="https://www.esbnyc.com" target="_blank">Empire State Building</a>.</p>
+            </div>
+            <div id="dia2">
+                <h3>DÍA 2: Arte y Cultura</h3>
+                <p>Visita museos como el Museo Metropolitano de Arte y el Museo de Historia Natural.</p>
+                <div class="image-container">
+                    <a href="https://www.metmuseum.org/" target="_blank">
+                    <img src="images/MET.jpg" alt="Museo Metropolitano de Arte" class="museum-image"></a>
+                    <a href="https://www.amnh.org/" target="_blank">
+                    <img src="images/NAT.jpg" alt="Museo de Historia Natural" class="museum-image"></a>
+                    <a href="https://www.moma.org/" target="_blank">
+                    <img src="images/MOMA.jpg" alt="Museo de Historia Natural" class="museum-image"></a>
+                </div>
+            </div>
+
+            <div id="dia3">
+                <h3>DÍA 5: Recorrido por Brooklyn</h3>
+                <p>Explora el puente de Brooklyn, DUMBO y los barrios de Brooklyn. Por la noche podrás disfrutar de espectaculares vistas al puente más emblemático:</p>
+                <div class="video-container"></div>
+                    <video controls>
+                        <source src="videos/Brooklyn.mp4" class="video">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+            <div id="dia4">
+                <h3>DÍA 4: Compras y Relax</h3>
+                <p>Dedica este día a las compras en la Quinta Avenida y relájate en los parques cercanos.</p><p>Aunque también tienes la opción de irte de compras a los department stores más famosos de la ciudad que te dejo en esta tabla:</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Tienda/Outlet</th>
+                            <th>Ubicación</th>
+                            <th>Rango de Precios</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bloomingdale's</td>
+                            <td><a href="https://www.google.com/maps?q=1000+Third+Avenue,+NYC" target="_blank">1000 Third Avenue, NYC</a></td>
+                            <td>$$$</td>
+                        </tr>
+                        <tr>
+                            <td>Macy's</td>
+                            <td><a href="https://www.google.com/maps?q=151+W+34th+St,+NYC" target="_blank">151 W 34th St, NYC</a></td>
+                            <td>$$</td>
+                        </tr>
+                        <tr>
+                            <td>Woodbury Common Outlet</td>
+                            <td><a href="https://www.google.com/maps?q=498+Red+Apple+Ct,+Central+Valley" target="_blank">498 Red Apple Ct, Central Valley</a></td>
+                            <td>$ - $$$</td>
+                        </tr>
+                        <tr>
+                            <td>Century 21</td>
+                            <td><a href="https://www.google.com/maps?q=22+Cortlandt+St,+NYC" target="_blank">22 Cortlandt St, NYC</a></td>
+                            <td>$$</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección Diario -->
+        <section id="diario">
+            <h2>DIARIO DE BITÁCORA</h2>
+            <p>Esto es un espacio pensado para ir escribiendo vivencias y notas sobre el viaje a modo de diaro.</p>
+             <!-- Formulario para añadir comentarios -->
+            <form id="comentario-form">
+                <label for="comentario">Escribe tu entrada del diario:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
+                <br>
+                <label for="fecha">Selecciona fecha de la entrada:</label>
+                <input type="date" id="fecha" name="fecha">
+                <br><br>
+                <button class="btn-guardar">
+                    <img src="images/papel.png" alt="Guardar">
+                    
+                </button>
+                
+            </form>
+            
+            <!-- Sección donde se verán los comentarios -->
+            <h3></h3>
+            <div id="comentarios">
+                <!-- Comentarios mostrados aquí -->
+                <div class="comentario">
+                    <p><strong>Fecha:</strong> 2025-02-08</p>
+                    <p> El primer días estuvo genial! Estuvimos paseando por Manhattan y nos encontramos a Adam Sandler!! Al final del día no podíamoss más, no sentíamos ni los pies... .</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Fecha:</strong> 2025-02-09</p>
+                    <p> Nos encantó el Museo Metropolitano de Arte, ¡muy recomendable!. Nos hicieron un descuento por ser estudiantes a la entrada y todo. Vimos un motón de obras super conocidas como la Noche estrellada de Van Gogh. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Links -->
+        <section id="checklist">
+            <h2>IMPRESCINDIBLES</h2>
+            <p>Aquí encontrarás una lista por categorías de los lugares, restaurantes,  planes... imprescindibles de Nueva York.</p>
+            <p>Podrás ir tachando aquellos que vayas completando.</p>
+                <h3>🏙️ Lugares turísticos</h3>
+                <label>
+                    <input type="checkbox">
+                    <span>Times Square</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Central Park</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Empire State Building</span>
+                </label>
+        
+                <h3>🍽️ Restaurantes</h3>
+                <label>
+                    <input type="checkbox">
+                    <span>Katz's Delicatessen</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Joe's Pizza</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Shake Shack</span>
+                </label>
+        
+                <h3>🎭 Planes y experiencias</h3>
+                <label>
+                    <input type="checkbox">
+                    <span>Broadway Show</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Paseo en barco a la Estatua de la Libertad</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Visita a museos</span>
+                </label>
+    </div>
+
+        </section>
+
+        <!-- Sección Mapa -->
+        <section id="mapa">
+            <h2>CITY MAP</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193053.85082339494!2d-74.11808691750107!3d40.71272824348596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3008de77a5%3A0x63c64846f45a89ea!2sNew+York%2C+NY%2C+USA!5e0!3m2!1ses!2ses!4v1603913085645!5m2!1ses!2ses" 
+                width="1175" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+         
+    </main>
+
+    <footer>
+        <p>© 2025 Guía 4 Días New York | <a href="#">Lorena Lam</a></p>
+    </footer>
+</body>
+</html>
 
