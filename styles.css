@@ -87,6 +87,26 @@ main {
     padding: 40px 20px;
 }
 
+#bienvenida {
+    font-family: 'Grandstander', sans-serif;
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+    height: 20px; 
+    background-color: #fcfcfc; 
+    text-align: center;
+}
+
+.bienvenida-contenido p {
+    font-size: 25px;
+    margin: 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
 section {
     display: none;
     margin-bottom: 40px;
@@ -95,6 +115,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Cuando el enlace de anclaje coincida con el ID de la sección, esa sección será visible */
 section:target {
@@ -113,8 +134,6 @@ p {
     color: #555;
     line-height: 1.6;
 }
-
-
 
 
 /* Sección Itinerario */
@@ -309,12 +328,14 @@ button:hover {
 }
 
 footer {
-    background-color: #50506d ;
+    background-color: #1f1f35 ;
     color: white;
     text-align: center;
     padding: 10px 0; /* Reducir el espaciado vertical */
     font-size: 14px; /* Reducir el tamaño de la fuente */
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer a {
