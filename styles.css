@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -14,10 +20,8 @@ a {
     cursor: url('images/cursor.png'), auto; /* Mantiene el cursor predeterminado en los enlaces */
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
+ /*CABECERA*/
 
 .header-container {
     display: flex; /* Usa flexbox para alinear los elementos */
@@ -42,7 +46,9 @@ html {
     color: #941212;
 }
 
-
+/*html {
+    scroll-behavior: smooth;
+}*/
 
 .barra-horizontal {
     font-family: 'Grandstander', sans-serif;
@@ -75,14 +81,20 @@ html {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-
 .barra-horizontal .menu li a:hover {
     text-decoration:  ghostwhite;
     background-color:#50506d ;
     color: #d86c6c;
 }
 
+ /* FIN CABECERA*/
+
+ section {
+    margin-bottom: 40px;
+}
+
+
+/* PAGINA INICIO*/
 main {
     padding: 40px 20px;
 }
@@ -104,24 +116,16 @@ main {
     margin: 0;
 }
 
-
 main {
     padding: 40px 20px;
 }
 
 section {
-    display: none;
     margin-bottom: 40px;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Cuando el enlace de anclaje coincida con el ID de la sección, esa sección será visible */
-section:target {
-    display: block;
 }
 
 h2 {
@@ -137,10 +141,18 @@ p {
     line-height: 1.6;
 }
 
-
+/* FIN PAGINA INICIO*/
 
 
 /* Sección Itinerario */
+
+#itinerario{
+    background-color:white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 .image-container {
     display: flex; /* Poner las imágenes en fila */
@@ -161,7 +173,7 @@ p {
     transform: scale(1.1); /* Hace la imagen un poco más grande al pasar el mouse */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra suave */
 }
-Estilo para el video */
+
 
 .video-container {
     display: flex; /* Usamos flexbox para alinearlas en fila */
@@ -221,7 +233,7 @@ table tbody tr:hover {
 table tbody tr:last-child td {
     border-bottom: none;
 }
-
+/* FIN Sección itinerario */
 
 /* Sección diario */
 form {

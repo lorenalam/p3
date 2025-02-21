@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía 4 Días New York</title>
+    <link rel="icon" href="images/cursor.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/taxi.png" alt="Imagen de título" class="header-image">
+            <h1 class="titulo">4 DÍAS EN NEW YORK</h1>
+        </div>
+        <nav class="barra-horizontal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="itinerario.html">Itinerario</a></li>
+                <li><a href="diario.html">Diario de Viaje</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="mapa.html">CityMap</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="diario">
+            <h2>DIARIO DE BITÁCORA</h2>
+            <p>Esto es un espacio pensado para ir escribiendo vivencias y notas sobre el viaje a modo de diaro.</p>
+            <!-- Formulario para añadir comentarios -->
+           <form id="comentario-form">
+               <label for="comentario">Escribe tu entrada del diario:</label>
+               <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
+               <br>
+               <label for="fecha">Selecciona fecha de la entrada:</label>
+               <input type="date" id="fecha" name="fecha">
+               <br><br>
+               <button class="btn-guardar">
+                   <img src="images/papel.png" alt="Guardar">
+                   
+               </button>
+               
+           </form>
+           
+           <!-- Sección donde se verán los comentarios -->
+           <h3></h3>
+           <div id="comentarios">
+               <!-- Comentarios mostrados aquí -->
+               <div class="comentario">
+                   <p><strong>Fecha:</strong> 2025-02-08</p>
+                   <p> El primer días estuvo genial! Estuvimos paseando por Manhattan y nos encontramos a Adam Sandler!! Al final del día no podíamoss más, no sentíamos ni los pies... .</p>
+               </div>
+               <div class="comentario">
+                   <p><strong>Fecha:</strong> 2025-02-09</p>
+                   <p> Nos encantó el Museo Metropolitano de Arte, ¡muy recomendable!. Nos hicieron un descuento por ser estudiantes a la entrada y todo. Vimos un motón de obras super conocidas como la Noche estrellada de Van Gogh. </p>
+               </div>
+           </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Guía 4 Días New York | <a href="#">Lorena Lam</a></p>
+    </footer>
+</body>
+</html>
